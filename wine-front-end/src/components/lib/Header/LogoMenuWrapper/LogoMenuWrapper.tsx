@@ -11,7 +11,7 @@ export default function LogoMenuWrapper() {
       <MenuIcon>
         <IconButtonGhosted icon={Menu} />
       </MenuIcon>
-      <Image src={wineLogo} alt="Wine's logo" />
+      <Image src={wineLogo} alt="Wine's logo" priority />
     </HeaderGroupWrapper>
   );
 }

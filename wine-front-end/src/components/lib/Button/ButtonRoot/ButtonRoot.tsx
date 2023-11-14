@@ -10,19 +10,26 @@ import {
 interface ButtonRootProps {
   children: React.ReactNode;
   variant: ButtonVariantEnum;
+  onClick?: () => void;
 }
-export default function ButtonRoot({ children, variant }: ButtonRootProps) {
+export default function ButtonRoot({
+  children,
+  variant,
+  onClick,
+}: ButtonRootProps) {
   return (
     <>
       {variant === ButtonVariantEnum.Filled && (
-        <ButtonFilled>{children}</ButtonFilled>
+        <ButtonFilled onClick={onClick}>{children}</ButtonFilled>
       )}
-      {variant === ButtonVariantEnum.Add && <ButtonAdd>{children}</ButtonAdd>}
+      {variant === ButtonVariantEnum.Add && (
+        <ButtonAdd onClick={onClick}>{children}</ButtonAdd>
+      )}
       {variant === ButtonVariantEnum.Outlined && (
-        <ButtonOutlined>{children}</ButtonOutlined>
+        <ButtonOutlined onClick={onClick}>{children}</ButtonOutlined>
       )}
       {variant === ButtonVariantEnum.Text && (
-        <ButtonText>{children}</ButtonText>
+        <ButtonText onClick={onClick}>{children}</ButtonText>
       )}
     </>
   );

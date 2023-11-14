@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
 
   @media ${devices.lg} {
     border-bottom: none;
+
+    padding-bottom: 0;
   }
 `;
 

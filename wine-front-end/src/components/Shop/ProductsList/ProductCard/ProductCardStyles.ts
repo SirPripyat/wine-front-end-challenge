@@ -1,10 +1,5 @@
+import { devices } from "@/styles/constants/devices";
 import styled from "styled-components";
-
-export const ProductCardWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-`;
 
 export const ProductCardInternalWrapper = styled.div`
   background-color: #fff;
@@ -23,6 +18,10 @@ export const ProductCardInternalWrapper = styled.div`
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 
   cursor: pointer;
+
+  @media ${devices.lg} {
+    padding: 1.6rem 2.4rem;
+  }
 `;
 
 export const WineImageContainer = styled.div`
@@ -35,6 +34,11 @@ export const Title = styled.h3`
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 700;
+
+  @media ${devices.lg} {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 `;
 
 export const PriceAndDiscount = styled.div`
@@ -48,6 +52,10 @@ export const Price = styled.small`
   color: #888888;
   font-size: 1rem;
   text-decoration-line: line-through;
+
+  @media ${devices.lg} {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Discount = styled.div`
@@ -58,10 +66,15 @@ export const Discount = styled.div`
   color: #fff;
   font-size: 1.2rem;
   line-height: 1.6rem;
+
+  @media ${devices.lg} {
+    font-size: 1.2rem;
+  }
 `;
 
 export const MemberLabelAndPrice = styled.div`
   display: flex;
+  align-items: center;
   gap: 0.8rem;
 `;
 
@@ -71,6 +84,10 @@ export const MemberPriceLabel = styled.p`
   line-height: 1rem;
   text-transform: uppercase;
   text-align: right;
+
+  @media ${devices.lg} {
+    font-size: 1.2rem;
+  }
 `;
 
 export const MemberPrice = styled.p`
@@ -82,11 +99,21 @@ export const MemberPrice = styled.p`
   display: flex;
   gap: 0.2rem;
   align-items: baseline;
+
+  @media ${devices.lg} {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
 `;
 
 export const DollarSign = styled.span`
   font-size: 1.4rem;
   line-height: 1.4rem;
+
+  @media ${devices.lg} {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 `;
 
 export const PriceToNotMembers = styled.span`
@@ -96,4 +123,9 @@ export const PriceToNotMembers = styled.span`
   font-size: 1rem;
   line-height: 1.6rem;
   text-transform: uppercase;
+
+  @media ${devices.lg} {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
 `;

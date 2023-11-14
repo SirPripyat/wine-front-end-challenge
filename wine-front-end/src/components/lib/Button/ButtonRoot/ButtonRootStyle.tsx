@@ -4,7 +4,7 @@ const ButtonWrapper = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
+  gap: 0.8rem;
 
   padding: 1.2rem 2.4rem;
 
@@ -16,6 +16,8 @@ const ButtonWrapper = styled.button`
   border: none;
 
   border-radius: 0.4rem;
+
+  cursor: pointer;
 `;
 
 export const ButtonFilled = styled(ButtonWrapper)`

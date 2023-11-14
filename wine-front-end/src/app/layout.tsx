@@ -5,7 +5,7 @@ import Header from "@/components/lib/Header/Header";
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["300", "700"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {

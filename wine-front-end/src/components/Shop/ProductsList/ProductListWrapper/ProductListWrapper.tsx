@@ -1,7 +1,8 @@
 import ProductCard from "../ProductCard/ProductCard";
 import ProductCount from "../ProductCount/ProductCount";
-import bottleOfWine from "../../../../public/bottleWineExample.png";
+import bottleOfWine from "../../../../../public/bottleWineExample.png";
 import { ProductCardsGrid, Wrapper } from "./ProductListWrapperStyles";
+import Pagination from "../Pagination/Pagination";
 
 export default function ProductListWrapper() {
   const product = {
@@ -19,7 +20,14 @@ export default function ProductListWrapper() {
       <ProductCardsGrid>
         <ProductCard product={product} />
         <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
+        <ProductCard product={product} />
       </ProductCardsGrid>
+      <Pagination />
     </Wrapper>
   );
 }
